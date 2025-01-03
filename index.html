@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Le titre de la page affiché dans l'onglet -->
-        <title>Document</title>
+        <title>Chez-Vous - Votre lieu chaleureux et convivial</title>
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
@@ -26,8 +26,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
         <!-- Seo -->
-        <meta name="description" content="Hello World">
-        <meta name="keywords" content="Hello, World">
+        <meta name="description" content="Chez-Vous, un lieu chaleureux où le bien-être et le confort des résidents sont notre priorité. Découvrez nos services d'assistance, de soins médicaux et de soutien pour les personnes âgées.">
+        <meta name="keywords" content="maison de retraite, soins aux personnes âgées, assistance quotidienne">
         <meta name="robots" content="index, follow">
         <meta name="author" content="Jean-Claude AZIAHA">
         <meta name="publisher" content="Jean-Claude AZIAHA">
@@ -37,7 +37,7 @@
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navigation principale">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Chez-Vous</a>
                 <label for="navbar-menu-checkbox"><i class="fa-solid fa-bars"></i></label>
@@ -109,15 +109,15 @@
                     <form action="backend.php" method="POST">
                         <div>
                             <label for="firstName">Prénom</label>
-                            <input type="text" name="firstName" id="firstName" class="form-control">
+                            <input type="text" name="firstName" id="firstName" class="form-control" required>
                         </div>
                         <div>
                             <label for="lastName">Nom</label>
-                            <input type="text" name="lastName" id="lastName" class="form-control">
+                            <input type="text" name="lastName" id="lastName" class="form-control" required>
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form-control">
+                            <input type="email" name="email" id="email" class="form-control" required>
                         </div>
                         <div>
                             <label for="phone">Numéro de téléphone</label>
@@ -125,7 +125,7 @@
                         </div>
                         <div>
                             <label for="message">Votre message</label>
-                            <textarea name="message" id="message" rows="4" class="form-control"></textarea>
+                            <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
                         </div>
                         <div>
                             <button type="submit">Envoyer</button>
