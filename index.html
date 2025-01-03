@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Encodage standard des caractères pour le web -->
+        <meta charset="UTF-8">
+
+        <!-- Minimum de responsive design à toujours mettre en place -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Le titre de la page affiché dans l'onglet -->
+        <title>Document</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Seo -->
+        <meta name="description" content="Hello World">
+        <meta name="keywords" content="Hello, World">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Jean-Claude AZIAHA">
+        <meta name="publisher" content="Jean-Claude AZIAHA">
+
+        <!-- Style Sheet -->
+        <link rel="stylesheet" href="assets/styles/app.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Chez-Vous</a>
+                <label for="navbar-menu-checkbox"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="navbar-menu-checkbox">
+                <ul class="navbar-list">
+                    <li><a href="#hero-section">Accueil</a></li>
+                    <li><a href="#services-section">Nos Services</a></li>
+                    <li><a href="#about-us-section">Qui sommes-nous?</a></li>
+                    <li><a href="#contact-section">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero-section">
+            <div class="container">
+                <div class="img-box">
+                    <img src="assets/images/hero.png" alt="Hero Section">
+                </div>
+                <div class="text-box">
+                    <h1>Bienvenue <span>Chez Vous</span></h1>
+                    <p>Un lieu chaleureux où le bien-être et le confort de nos résidents passent avant tout.</p>
+                    <a href="#contact-section">Contactez-nous</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services-section">
+            <h2>Nos services</h2>
+            <div class="container">
+                <article>
+                    <img src="assets/images/service1.png" alt="Assistance à la vie quotidienne">
+                    <h3>Assistance à la vie quotidienne</h3>
+                    <p>L'assistance à la vie quotidienne signifie que nous avons des personnes qui aident nos membres âgés à accomplir leurs tâches quotidiennes tout en les accompagnant en permanence.</p>
+                </article>
+                <article>
+                    <img src="assets/images/service2.png" alt="service 2">
+                    <h3>Soins médicaux</h3>
+                    <p>Obtenir des soins médicaux pour les personnes âgées est difficile si vous n'avez pas accès aux ressources adéquates. Nous les fournissons à tous nos clients âgés.</p>
+                </article>
+                <article>
+                    <img src="assets/images/service3.png" alt="service 3">
+                    <h3>Soins pour la démence</h3>
+                    <p>La démence n'est pas une maladie inconnue chez les personnes âgées. Nous offrons le meilleur service pour gérer ces personnes et prendre soin d'elles.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About-us Section -->
+        <section id="about-us-section">
+            <div class="container">
+                <div class="img-box">
+                    <img src="assets/images/about-us.png" alt="about us">
+                </div>
+                <div class="text-box">
+                    <h3>Vous n'êtes jamais seul lorsque vous êtes à nos côtés.</h3>
+                    <p>Notre équipe s'efforce de fournir les meilleures ressources pour offrir le plus grand bonheur à nos invités âgés, quoi qu'il arrive.</p>
+                    <p>Lorsque vous cherchez un centre de soins pour un membre âgé de votre famille, vous devez trouver un foyer rempli de compassion et d'amour pour les personnes âgées, et nous sommes là pour ça.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <h2>Contactez-nous</h2>
+            <div class="container">
+                <div class="form-box">
+                    <form action="backend.php" method="POST">
+                        <div>
+                            <label for="firstName">Prénom</label>
+                            <input type="text" name="firstName" id="firstName" class="form-control">
+                        </div>
+                        <div>
+                            <label for="lastName">Nom</label>
+                            <input type="text" name="lastName" id="lastName" class="form-control">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                        <div>
+                            <label for="phone">Numéro de téléphone</label>
+                            <input type="tel" name="phone" id="phone" class="form-control">
+                        </div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea name="message" id="message" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="infos-box">
+                    <div>
+                        <p><strong><i class="fa-solid fa-envelope"></i></strong> <a href="mailto:chez-vous@gmail.com">chez-vous@gmail.com</a></p>
+                        <p><strong><i class="fa-solid fa-phone"></i></strong> <a href="tel:+33605050505">06 05 05 05 05</a></p>
+                        <p><strong><i class="fa-regular fa-address-book"></i></strong> 06 Rue Du Pape 75000 Paris, France</p>
+                    </div>
+                    <div class="iframe-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d168020.0140059138!2d2.5611316801537156!3d48.85224690660946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1735868790330!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="left-box">
+                    <p>Chez-vous</p>
+                </div>
+                <div class="right-box">
+                    <p>&copy; 2025 Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
