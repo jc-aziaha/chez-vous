@@ -197,6 +197,12 @@ body {
     gap: 3rem;
 }
 
+#about-us-section .container .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #about-us-section .container .img-box img {
     width: 100%;
     height: auto;
@@ -291,6 +297,17 @@ body {
 
 #contact-section .container .infos-box div a {
     color: var(--text-color);
+}
+
+#contact-section .container .infos-box .social-network-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact-section .container .infos-box .social-network-box i {
+    margin-right: 2rem;
+    font-size: 1.5rem;
 }
 
 #contact-section .container .infos-box .iframe-box {
